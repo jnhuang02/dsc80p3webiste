@@ -58,8 +58,9 @@
 
     <div class="section">
         <h2>Data Cleaning</h2>
-        <p>We clean the data by only taking a specific list of leagues, since our analysis only wants the leagues that are in tier 1. 
-            By cleaning the data, we can focus on the data that we want. It help us to analyze the information faster</p>
+        <p>We clean the data by only taking a specific list of leagues, since our analysis only wants the leagues that are in tier 1, which is 'LCK', 'LPL', 'LEC', 'LCS', 'PCS', 'VCS', 'CBLOL', 'LJL', 'LLA'. 
+            Since we are only looking at gamelengths and league so far, we are only going to keep those two columns. GameID is also important. We notice that the gamelength for every single player in the same game is the same, which makes it redundent and repetivtive to keep repeating the same time for every player
+            in the game. Therefore it's useful to only keep one unique gameid at a time.</p>
         <pre>| gameid           |   gamelength | league   |
 |:-----------------|-------------:|:---------|
 | 8401-8401_game_1 |         1365 | LPL      |
